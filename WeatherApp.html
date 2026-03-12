@@ -2,27 +2,10 @@
 <head>
 <title>Weather App☁️</title>
 <style>
-body {
- background-color: lightblue;
-}
 
-.div1 {
-  width: 300px;
-  height: 100px;
-  padding: 50px;
-border-radius: 10px;
-}
-
-.div2 {
-  width: 300px;
-  height: 100px;
-  padding: 50px;
-border-radius: 10px;
-}
-
-.box {
+.box1 {
 background-color: light-blue;
-height: 400px;
+height: 200px;
 width: 300px;
 position: relative;
 border: 3px solid;
@@ -32,8 +15,55 @@ margin: 20px;
 align-text: center;
 }
 
+.div {
+background-color: light-blue;
+height: 200px;
+width: 300px;
+position: relative;
+border: 3px solid;
+border-radius: 10px;
+padding: 50px;
+margin: 20px;
+align-text: center;
+}
+
+
 </style>
 </head>
 <body>
 
 <h2>Weather App☁️</h2>
+<div class= box>
+<script>
+<form>
+<script>
+<div>
+function checkWeather() {
+var city = document.getElementById("city").value;
+var weather;
+
+if (city == "Pune") {
+weather = "🌤️ Sunny, 30°C";
+}
+else if (city == "Mumbai") {
+weather = "🌧️ Rainy, 28°C";
+}
+else if (city == "Delhi") {
+weather = "☀️ Hot, 35°C";
+}
+else if (city == "") {
+weather = "❗ Please enter a city name";
+}
+else {
+weather = "❄️ Cold, 20°C";
+}
+</div>
+
+document.getElementById("result").innerHTML =
+"Weather in " + city + ": " + weather;
+}
+</script>
+
+</script>
+</body>
+</html>

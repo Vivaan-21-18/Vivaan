@@ -1,0 +1,49 @@
+<DOCTYPE html>
+<head>
+<title>lightonoff</title>
+<style>
+
+img {
+align: center;
+height: 400px;
+width: 300px
+} 
+
+button {
+padding:10px 20px;
+font-size: 16px;
+margin: 10px;
+cursor: pointer;
+}
+
+h2 {
+font-size: 20px ;
+font-color: green;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>Light ON / OFF Bulb</h2>
+
+<img id="bulb"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrUS-SQWSJ-qj5hIItJJ5E2ObIG2pLizSQdg&s">
+
+<br>
+
+<button onclick="turnOn()">ON</button>
+<button onclick="turnOff()">OFF</button>
+
+<script>
+function turnOn() {
+document.getElementById("bulb").src=
+"https://thumbs.dreamstime.com/b/glowing-off-electric-light-bulb-realistic-transparent-lightbulb-98707543.jpg";
+}
+
+<script>
+function turnOff() {
+document.getElementById("bulb").src=
+"https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg";
+}
+</body>
+</html>
